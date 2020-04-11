@@ -1,0 +1,16 @@
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $green;
+
+$link: $light-green;
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+html {
+  background: linear-gradient(to right top, $turquoise, $green);
+}
+
+html, body {
+  height: 100%;
+}

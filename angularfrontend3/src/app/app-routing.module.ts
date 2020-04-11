@@ -18,15 +18,12 @@ import {
   MatOptionModule
 } from '@angular/material';
 
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { AppRoutingModule } from './app-routing.module';
+
+const routes: Routes = [];
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-  ],
-  imports: [
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule,
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
@@ -44,9 +41,6 @@ import { AppRoutingModule } from './app-routing.module';
     MatCardModule,
     MatSlideToggleModule,
     MatSelectModule,
-    MatOptionModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    MatOptionModule,]
 })
-export class AppModule { }
+export class AppRoutingModule { }

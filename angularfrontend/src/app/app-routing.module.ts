@@ -1,4 +1,5 @@
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,16 +18,18 @@ import {
   MatSelectModule,
   MatOptionModule
 } from '@angular/material';
-
-import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { AppRoutingModule } from './app-routing.module';
+
+
+
+const routes: Routes = [{
+  path: '', component: LoginComponent,
+}
+];
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-  ],
-  imports: [
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule,
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
@@ -44,9 +47,6 @@ import { AppRoutingModule } from './app-routing.module';
     MatCardModule,
     MatSlideToggleModule,
     MatSelectModule,
-    MatOptionModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    MatOptionModule,]
 })
-export class AppModule { }
+export class AppRoutingModule { }
