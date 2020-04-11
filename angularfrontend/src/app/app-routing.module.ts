@@ -17,7 +17,6 @@ const routes: Routes = [{
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule,
     BrowserModule,
-    AppRoutingModule,
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
