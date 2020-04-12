@@ -5,13 +5,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './login/login.component';
+import { LandingComponent } from './landing/landing.component';
 // import { PassThrough } from 'stream';
 
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
-  // { path: '/login/succes/:jwt', component: PassThrough },
-  // { path: '/login/failure', component: PassThrough },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'login/succes/:jwt', component: LandingComponent },
+  // { path: 'login/failure', component: LandingComponent },
 ];
 
 @NgModule({

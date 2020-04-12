@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
