@@ -7,7 +7,7 @@ import { DOCUMENT } from '@angular/common';
   providedIn: 'root'
 })
 export class WebServiceService {
-  readonly API_URL = 'http://127.0.0.1:3000';
+  readonly API_URL = 'http://lukhanyo.ml:3000';  // Change this for local testing
   constructor(@Inject(DOCUMENT) private document: Document, private httpclient: HttpClient) { }
   get(uri: string) {
     return this.httpclient.get(`${this.API_URL}/${uri}`);
