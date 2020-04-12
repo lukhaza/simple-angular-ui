@@ -23,12 +23,12 @@ EXPOSE 4200
 # Copy the api files.
 COPY . ./
 
-RUN npm install
-
 RUN chown -R lukhanyo-ui ./
 
 # Switch user.
 USER lukhanyo-ui
+
+RUN npm install
 
 # Start the application.
 CMD [ "npm", "run", "start" ]
