@@ -2,12 +2,15 @@ import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
+import { environment } from '../../../environments/environment';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class WebServiceService {
-  readonly API_URL = 'http://lukhanyo.ml:3000';  // Change this for local testing
+  readonly API_URL = `http://${environment.host}:3000`;  // Change this for local testing
   constructor(@Inject(DOCUMENT) private document: Document, private httpclient: HttpClient) { }
   get(uri: string) {
     return this.httpclient.get(`${this.API_URL}/${uri}`);
