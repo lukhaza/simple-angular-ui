@@ -34,3 +34,5 @@ jobs:
     - name: Push to dockerhub
       run: |
         docker push lukhanyokwela/angular-ui:$GITHUB_RUN_NUMBER
+        docker tag lukhanyokwela/angular-ui:$GITHUB_RUN_NUMBER lukhanyokwela/angular-ui
+        docker push lukhanyokwela/angular-ui
