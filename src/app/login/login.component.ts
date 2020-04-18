@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
   }
 
   public googlelogin() {
-    console.log('clickedlkjdsflksajflkdsjfdlkfjslkjslkfjlkfjslkdfjsdlkfj');
     return this.webservice.redirectBrowser('auth/google');
   }
 }

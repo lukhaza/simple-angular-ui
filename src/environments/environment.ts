@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  hostApi: 'localhost:3000'
+  hostApi: 'twodev.ml/api'
 };
 
 /*
