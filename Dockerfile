@@ -33,5 +33,5 @@ RUN npm install
 RUN ng build --prod
 
 # Start the application.
-#CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run", "start" ]
 
