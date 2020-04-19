@@ -5,7 +5,7 @@ RUN npm install
 RUN npm run build
 
 # https://stackoverflow.com/questions/45858957/404-not-found-nginx-angular-routing
-RUN echo 'pushstate: enabled' > dist/Staticfile 
+RUN echo 'pushstate: enabled' > /app/dist/angularfrontend/Staticfile 
 
 FROM nginx:alpine
 COPY --from=node /app/dist/angularfrontend /usr/share/nginx/html
