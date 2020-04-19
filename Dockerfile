@@ -30,5 +30,8 @@ USER lukhanyo-ui
 
 RUN npm install
 
+RUN ng build --prod
+
 # Start the application.
 CMD [ "npm", "run", "start" ]
+
