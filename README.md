@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 https://blog.angular-university.io/angular-jwt-authentication/
+
+https://www.youtube.com/watch?v=BO67e3QU9dU
