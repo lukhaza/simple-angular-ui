@@ -30,7 +30,7 @@ USER lukhanyo-ui
 
 RUN npm install
 
-RUN ng build --prod
+RUN npm run build
 
 # Start the application.
 CMD [ "npm", "run", "start" ]
